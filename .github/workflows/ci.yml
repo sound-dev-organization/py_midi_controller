@@ -1,0 +1,19 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  docs:
+    uses: ./.github/workflows/template.yml
+    with:
+      tox_env: docs
+
+  lint:
+    uses: ./.github/workflows/template.yml
+    with:
+      tox_env: lint
+
+  test:
+    uses: ./.github/workflows/template.yml
+    with:
+      tox_env: test
