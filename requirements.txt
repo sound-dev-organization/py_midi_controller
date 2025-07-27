@@ -1,2 +1,3 @@
 mido>=1.3.0,<1.4.0
 python-rtmidi>=1.5.0,<1.6.0  # mido default backend
+rich==14.1.0
